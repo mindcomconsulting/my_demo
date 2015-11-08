@@ -1,0 +1,18 @@
+<%= form_for @article, :url=>{:controller=>'articles',:action=>'update' } do |f| %>
+  <p>
+    <%= f.label :Name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :Title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :FName %>
+    <%= f.text_field :fname %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+ 

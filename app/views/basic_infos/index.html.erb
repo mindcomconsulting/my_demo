@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <% @basic_info.each do |article| %>
+     <tr>
+      <td><%= article.title %></td>
+      <td><%= article.description %></td>
+    </tr>
+  <% end %>
+</table>
+<%=link_to"Add New Info",new_basic_info_path %>
+
+
